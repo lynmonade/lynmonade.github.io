@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="FAQ,Eclipse," />
 
 
 
@@ -79,13 +79,18 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="如何在Eclipse中创建J2EE项目？（非Maven项目）Eclipse中的J2EE项目就是Dynamic Web Project项目。接着把Default output folder修改为WebRoot\WEB-INF\classes（该目录结构遵循MyEclipse中的Java Web Project项目结构），这时编译后的class文件就会放在该目录下。 J2EE项目的jar包放在哪？（非">
+<meta name="keywords" content="FAQ,Eclipse">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Eclipse-FAQ">
+<meta property="og:url" content="http://yoursite.com/2018/02/19/Eclipse-FAQ/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="如何在Eclipse中创建J2EE项目？（非Maven项目）Eclipse中的J2EE项目就是Dynamic Web Project项目。接着把Default output folder修改为WebRoot\WEB-INF\classes（该目录结构遵循MyEclipse中的Java Web Project项目结构），这时编译后的class文件就会放在该目录下。 J2EE项目的jar包放在哪？（非">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-02-18T16:31:44.995Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
+<meta name="twitter:title" content="Eclipse-FAQ">
+<meta name="twitter:description" content="如何在Eclipse中创建J2EE项目？（非Maven项目）Eclipse中的J2EE项目就是Dynamic Web Project项目。接着把Default output folder修改为WebRoot\WEB-INF\classes（该目录结构遵循MyEclipse中的Java Web Project项目结构），这时编译后的class文件就会放在该目录下。 J2EE项目的jar包放在哪？（非">
 
 
 
@@ -115,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/02/19/Eclipse-FAQ/"/>
 
 
 
 
 
-  <title>Hexo</title>
+  <title>Eclipse-FAQ | Hexo</title>
   
 
 
@@ -140,8 +145,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -234,9 +238,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -266,9 +270,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/02/19/Eclipse-FAQ/" itemprop="url">Eclipse-FAQ</a></h1>
+          <h1 class="post-title" itemprop="name headline">Eclipse-FAQ</h1>
         
 
         <div class="post-meta">
@@ -318,9 +320,7 @@
       
 
       
-        
-          
-            <h2 id="如何在Eclipse中创建J2EE项目？（非Maven项目）"><a href="#如何在Eclipse中创建J2EE项目？（非Maven项目）" class="headerlink" title="如何在Eclipse中创建J2EE项目？（非Maven项目）"></a>如何在Eclipse中创建J2EE项目？（非Maven项目）</h2><p>Eclipse中的J2EE项目就是Dynamic Web Project项目。接着把Default output folder修改为<code>WebRoot\WEB-INF\classes</code>（该目录结构遵循MyEclipse中的Java Web Project项目结构），这时编译后的class文件就会放在该目录下。</p>
+        <h2 id="如何在Eclipse中创建J2EE项目？（非Maven项目）"><a href="#如何在Eclipse中创建J2EE项目？（非Maven项目）" class="headerlink" title="如何在Eclipse中创建J2EE项目？（非Maven项目）"></a>如何在Eclipse中创建J2EE项目？（非Maven项目）</h2><p>Eclipse中的J2EE项目就是Dynamic Web Project项目。接着把Default output folder修改为<code>WebRoot\WEB-INF\classes</code>（该目录结构遵循MyEclipse中的Java Web Project项目结构），这时编译后的class文件就会放在该目录下。</p>
 <h2 id="J2EE项目的jar包放在哪？（非Maven项目）"><a href="#J2EE项目的jar包放在哪？（非Maven项目）" class="headerlink" title="J2EE项目的jar包放在哪？（非Maven项目）"></a>J2EE项目的jar包放在哪？（非Maven项目）</h2><p>在<code>WebRoot\WEB-INF</code>目录下新建lib文件夹，接着把jar包都拷贝进去，然后在项目右键–&gt;properties–&gt;Java Build Path中引用lib下的jar包，使得jar包可以参与项目编译。</p>
 <h2 id="项目源文件如何部署到中间件中？"><a href="#项目源文件如何部署到中间件中？" class="headerlink" title="项目源文件如何部署到中间件中？"></a>项目源文件如何部署到中间件中？</h2><p>在项目右键–&gt;Properties–&gt;Deployment Assembly中查看。tomcat启动时可能会报找不到Java类，这时便可以到这里去查看哪些java源文件、jar包发布到了中间件中。</p>
 <p>找不到Java类的原因主要有：</p>
@@ -345,8 +345,6 @@
 <h2 id="如何编写一个合格的-gitignore文件"><a href="#如何编写一个合格的-gitignore文件" class="headerlink" title="如何编写一个合格的.gitignore文件"></a>如何编写一个合格的.gitignore文件</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 忽略文件夹，包括子文件</span></span><br><span class="line">/.settings/</span><br><span class="line">/target/</span><br><span class="line">/src/main/webapp/js/miniui/</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 忽略文件</span></span><br><span class="line">jfinal-study.log</span><br><span class="line">.classpath</span><br><span class="line">.project</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 忽略文件类型</span></span><br><span class="line">*.class</span><br></pre></td></tr></table></figure>
 <h2 id="发布到github的标准maven项目应包含哪些目录？"><a href="#发布到github的标准maven项目应包含哪些目录？" class="headerlink" title="发布到github的标准maven项目应包含哪些目录？"></a>发布到github的标准maven项目应包含哪些目录？</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">//只需包含下列文件/文件夹</span><br><span class="line">src</span><br><span class="line">WebRoot</span><br><span class="line">.gitignore</span><br><span class="line">pom.xml</span><br><span class="line"></span><br><span class="line">//在.gitignore中需忽略下列文件/文件夹</span><br><span class="line">.settings</span><br><span class="line">.classpath</span><br><span class="line">.project</span><br><span class="line">WebRoot中生成的.class文件</span><br></pre></td></tr></table></figure>
 
-          
-        
       
     </div>
     
@@ -361,277 +359,38 @@
 
     <footer class="post-footer">
       
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/02/19/FJinal-FAQ/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="lynmonade">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/02/19/FJinal-FAQ/" itemprop="url">FJinal-FAQ</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-02-19T00:27:03+08:00">
-                2018-02-19
-              </time>
-            
-
-            
-
-            
-          </span>
-
+        <div class="post-tags">
           
-
+            <a href="/tags/FAQ/" rel="tag"># FAQ</a>
           
-            
+            <a href="/tags/Eclipse/" rel="tag"># Eclipse</a>
           
-
-          
-          
-
-          
-
-          
-
-          
-
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h2 id="JFinal如何映射Action"><a href="#JFinal如何映射Action" class="headerlink" title="JFinal如何映射Action"></a>JFinal如何映射Action</h2><p>一个典型的Action URL格式如下：</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http://ip:端口号/项目名称/controllerKey/methodKey</span><br></pre></td></tr></table></figure>
-<p>基于Jetty开发时项目名称在main函数中配置。基于Tomcat开发时项目名称在Web Project Settings中设置。</p>
-<p>controllerKey在全局拦截器的configRoute()方法中配置：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">configRoute</span><span class="params">(Routes me)</span> </span>&#123;</span><br><span class="line">	me.add(<span class="string">"/login"</span>, LoginController.class);</span><br><span class="line">	me.add(<span class="string">"/mvc/user"</span>, UserController.class);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>而methodKey直接等于controller中的方法名，如果使用了@ActionKey，则默认的controllerKey失效，并用ActionKey的值替代<code>/controllerKey/methodKey</code>。</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">LoginController</span> <span class="keyword">extends</span> <span class="title">Controller</span> </span>&#123;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">doLogin</span><span class="params">()</span> </span>&#123;&#125; <span class="comment">//http://localhost:8080/jhb/login/doLogin</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">UserController</span> <span class="keyword">extends</span> <span class="title">Controller</span> </span>&#123;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">insertUser</span><span class="params">()</span> </span>&#123;&#125; <span class="comment">//http://localhost:8080/jhb/mvc/user/insertUser</span></span><br><span class="line">  </span><br><span class="line">  	<span class="meta">@ActionKey</span>(<span class="string">"/res"</span>)</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">register</span><span class="params">()</span> </span>&#123;&#125; <span class="comment">//http://localhost:8080/jhb/res</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h2 id="JFinal如何映射View"><a href="#JFinal如何映射View" class="headerlink" title="JFinal如何映射View"></a>JFinal如何映射View</h2><p>渲染view的路径由三部分组成：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">baseViewPath/viewPath/viewName</span><br></pre></td></tr></table></figure>
-<p>baseViewPath在全局拦截器的configConstant()方法中配置：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">configConstant</span><span class="params">(Constants me)</span> </span>&#123;</span><br><span class="line">  	me.setBaseViewPath(<span class="string">"/WEB-INF/view"</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>viewPath在全局拦截器的configRoute()方法中配置，注意，如果没有显式的配置viewPath，则viewPath等于controllerKey。</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">configRoute</span><span class="params">(Routes me)</span> </span>&#123;</span><br><span class="line">    me.add(<span class="string">"/mvc/user"</span>, UserController.class); <span class="comment">//未显式配置viewPath，因此viewPath=controllerKey=/mvc/user</span></span><br><span class="line">    me.add(<span class="string">"/login"</span>, LoginController.class, <span class="string">"/mvc/login"</span>); <span class="comment">//显式配置viewPath为/mvc/login</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>viewName在Controller的render方法中配置：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">UserController</span> <span class="keyword">extends</span> <span class="title">Controller</span> </span>&#123;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">insert</span><span class="params">()</span> </span>&#123; <span class="comment">//Action URL: http://localhost:8080/jhb/mvc/user/insert</span></span><br><span class="line">		renderJsp(<span class="string">"insert.jsp"</span>); <span class="comment">//渲染视图：/WEB-INF/view/mvc/user/insert.jsp</span></span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">LoginController</span> <span class="keyword">extends</span> <span class="title">Controller</span> </span>&#123;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">doLogin</span><span class="params">()</span> </span>&#123; <span class="comment">//Action URL: http://localhost:8080/jhb/login/doLogin</span></span><br><span class="line">		renderJsp(<span class="string">"myLogin.jsp"</span>); <span class="comment">//渲染视图：/WEB-INF/view/mvc/login/myLogin.jsp</span></span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h2 id="映射经验"><a href="#映射经验" class="headerlink" title="映射经验"></a>映射经验</h2><p><strong>：ControllerKey、ActionKey、baseViewPath、viewPath都必须以<code>/</code>开头，而viewName则不需要，但viewName必须包含视图后缀，比如<code>.jsp</code></strong>。</p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
       
 
       
       
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
       
 
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/02/18/hello-world/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="lynmonade">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/02/18/hello-world/" itemprop="url">Hello World</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
             
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-02-18T23:58:46+08:00">
-                2018-02-18
-              </time>
+              <a href="/2018/02/19/FJinal-FAQ/" rel="next" title="FJinal-FAQ">
+                <i class="fa fa-chevron-left"></i> FJinal-FAQ
+              </a>
             
+          </div>
 
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
             
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
+          </div>
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -641,10 +400,11 @@
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -652,6 +412,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -672,8 +436,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -724,6 +497,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#如何在Eclipse中创建J2EE项目？（非Maven项目）"><span class="nav-number">1.</span> <span class="nav-text">如何在Eclipse中创建J2EE项目？（非Maven项目）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#J2EE项目的jar包放在哪？（非Maven项目）"><span class="nav-number">2.</span> <span class="nav-text">J2EE项目的jar包放在哪？（非Maven项目）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#项目源文件如何部署到中间件中？"><span class="nav-number">3.</span> <span class="nav-text">项目源文件如何部署到中间件中？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#如何查看项目发布名称是什么？"><span class="nav-number">4.</span> <span class="nav-text">如何查看项目发布名称是什么？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#如何拉取并部署一个基于Maven的J2EE项目"><span class="nav-number">5.</span> <span class="nav-text">如何拉取并部署一个基于Maven的J2EE项目</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#如何编写一个合格的-gitignore文件"><span class="nav-number">6.</span> <span class="nav-text">如何编写一个合格的.gitignore文件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#发布到github的标准maven项目应包含哪些目录？"><span class="nav-number">7.</span> <span class="nav-text">发布到github的标准maven项目应包含哪些目录？</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -864,6 +653,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
